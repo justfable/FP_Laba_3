@@ -1,0 +1,71 @@
+#1
+a = int(input())
+c = int(input())
+b = int(input())
+n = float(input())
+year = 0;
+sum1 = 0;
+sum2 = b * n;
+
+for i in range(a, c):
+    year += 1
+print("Лет: ", year);
+month = 12 * year;
+while month > 0:
+    month -= 1;
+    sum1 += sum2
+print("Сумма: ", sum1);
+
+
+#3
+import random
+min = 10
+max = 20
+num_words = random.randint(min, max)
+print("Количество слов, для изучения:", num_words)
+
+start = 8000
+stop = 16000
+width = 2000
+num_code = random.randrange(start, stop, width)
+print("Количество шагов в день", num_code)
+
+todo = ["Uborka", "Gotovka", "Stirka", "ucheba"]
+enumTodo = enumerate(todo, (1))
+print("Список дел: ", list(enumTodo))
+
+
+Задачи
+#1
+a = int(input())
+b = int(input())
+for i in range(a, b+1):
+    print(i)
+
+
+#2 
+a = int(input())
+b = int(input())
+if a < b:
+    for i in range(a, b + 1):
+        print(i)
+else:
+    for i in range(a, b - 1, -1):
+        print(i)
+
+
+#3
+a = int(input())
+b = int(input())
+for i in range(a - (a + 1) % 2, b - b % 2, -2):
+    print(i)
+
+
+#4
+n = int(input())
+m = 0;
+for i in range(1, n + 1):
+    m += i
+for i in range(n - 1):
+    m -= int(input())
+print(m)
